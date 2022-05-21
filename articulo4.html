@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Estructura de Datos</title>
+    <script src="https://kit.fontawesome.com/ec9e338e1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/principal.css">
+    <link rel="stylesheet" href="CSS/articulo.css">
+    <meta name="viewport" content="width=device=width, user-scalable=no, initial-scale=1.0, maximum-sclae=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <!--Header - Menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Data<b>Structures</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="menu-selected"><a href="temas.html" class="text-menu-selected"><i class="fas fa-file-alt"></i>Temas</a></li>
+                        <li><a href="#"><i class="fas fa-headset"></i>Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!--Portada-->
+    <div class="container-all" id="move-content">
+        <div class="article-container-cover">
+            <div class="container-info-cover">
+                <h1>Grafos y Caminos</h1>
+                <p>Es un conjunto de objetos llamados vértices o nodos.</p>
+            </div>
+            </div>
+    
+            <div class="container-content">
+            <article>
+                <h1>Concepto</h1>
+
+                <p>En la lingüística, un grafo es un objeto unitario de naturaleza abtracta que abarca a
+                     las grafias que componen una letra.</p>
+
+                <h2>Grafos</h2>
+
+                <p>Un grafo consiste de un conjunto V de vértices (o nodos) y un conjunto E de arcos que 
+                    conectan a esos vértices.</p>
+
+                <h3>Grafos Simples:</h3>
+
+                <p>Un grafo es simple si a lo más existe una arista uniendo dos vértices cualquiera. Esto 
+                    es equivalente a decir que una arista cualquiera es la única que une dos vértices 
+                    específicos.</p>
+
+                <img src="IMG/grafo_simple.png" alt="">
+
+                <h3>Grafos Conexos</h3>
+
+                <p>Un grafo es conexo si cada par de vértices está conectado por un camino; es decir, si 
+                    para cualquier par de vértices (a, b), existe al menos un camino posible desde a hacia
+                     b.</p>
+
+                <img src="IMG/grafo_conexo.png" alt="">
+
+                <h2>Aristas</h2>
+
+                <p>Una arista es una relación entre dos vértices de un grafo. <br>
+                Aristas adyacentes: Estas son dos aristasque dirigen hacia el mismo vértice y se juntan en 
+                él <br>
+                Aristas Paralelas: Estas son dos aristas donde el vértice inicial y el vértice final son 
+                uno mismo.</p>
+
+                <h3>Aristas Dirigidas:</h3>
+
+                <p>Una arista dirigida es una arista de un digrafo y tiene una dirección asociada consigo,
+                     este posee un vértice inicial y un vértice final.</p>
+
+                <img src="IMG/dirigido.png" alt="">
+                
+                <h3>Arista No Dirigida:</h3>
+
+                <p>Es un tipo de grafo en el cual las aristas representan relaciones simétricas y no tienen
+                     un sentido definido.</p>
+
+                <img src="IMG/No_dirigido.png" alt="">
+
+                <h2>Recorrido de un grafo</h2>
+
+                <p>La operación de recorrer una estructura de datos consiste en visitar (procesar) cada uno 
+                    de los nodos a partir de uno dado. Así, para recorrer un árbol se parte del nodo raíz y
+                     según el orden se visitan todos los vértices alcanzables a partir de uno dado. <br>
+                      Hay dos formas de recorrer un grafo:</p> 
+
+                <p>Recorrido en profundidad y recorrido en anchura.</p> 
+
+                <img src="IMG/Recorrido.png" alt="">
+
+                <p>Si el conjunto de nodos marcados se trata como una cola, entonces el recorrido es en 
+                anchura; si se trata como una pila, el recorrido es en profundidad.</p>
+
+                <H2>Camino Minimo</H2>
+
+                <p>El problema del camino mínimo es que consiste en hallar la mejor forma de ir desde un 
+                    punto a otro (o a varios puntos) minimizando la distancia recorrida, el tiempo invertido,
+                     entre varias posibilidades.</p>
+
+                <img src="IMG/Imagen13.png" alt="">
+
+                <h2>Algoritmo de Dijkstra</h2>
+
+                <p>- El algoritmo calcula las distancias mínimas desde un nodo inicial a todos los demás. 
+                    Para hacerlo, en cada paso se toma el nodo más cercano al inicial que aún no fue visitado
+                    (le diremos v). Este nodo tiene calculada la menor distancia al nodo inicial.</p>
+
+                <p>- Luego, recalculamos todos los caminos mínimos, teniendo en cuenta a v como camino intermedio.</p>
+
+                <p>- Así, en cada paso tendremos un subconjunto de nodos que ya tienen calculada su mínima 
+                    distancia y los demás tienen calculada su minima distancia si solo puedo usar los nodos
+                     del conjunto como nodos intermedios.</p>
+
+                <p>- Con cada iteración agregaremos un nodo más a nuestro conjunto, hasta resolver el problema en
+                     su totalidad.</p>
+
+                <img src="IMG/graph.png" alt="">
+
+                <h4>Se puede aplicar los grafos en:</h4>
+
+                <p>- Elaboración de mapas. <br>
+                - Aplicaciones matemáticas. <br>
+                - Caminos a menor costo. <br>
+                - Información geográfica. <br>
+                - Saber cuanta población existe en territorio. <br>
+                - Red de carreteras. <br>
+                - Red eléctrica. <br>
+                - Sistemas de alcantarillados.</p>
+
+                <h2>Recorrido y búsquedas</h2>
+
+                <p>La operación de recorrer una estructura de datos consiste en visitar (procesar) cada uno de los
+                     nodos a partir de uno dado. Así, para recorrer un árbol se parte del nodo raíz y según el orden
+                     se visitan todos los nodos. De igual forma, recorrer un grafo consiste en visitar todos los 
+                     vértices alcanzables a partir de uno dado.</p>
+
+                <img src="IMG/Imagen14.png" alt="">
+
+                <p>- Hay dos formas de recorrer un grafo: recorrido en profundidad (DFS) y recorrido en anchura (BFS)</p>
+
+                <h4>Recorrido (o búsqueda) en amplitud (breadth-first search):</h4>
+
+                <p>- Se visita a todos los vecinos directos del nodo inicial, luego a los vecinos de los vecinos, etc.</p>
+
+                <p>- El recorrido de búsqueda en anchura, en amplitud o expansión, es unaestrategia aplicable 
+                    indistintamente al caso de grafos dirigidos y no dirigidos.</p>
+                
+                <p>- El recorrido en anchura es una generalización del recorrido por niveles de un árbol.</p>
+
+                <p>- Se trata de visitar un nodo inicial y luego a todos los nodos que están a un arco de 
+                    distancia de éste, luego a todos los nodos que están a dos arcos de distancia de éte 
+                    y así sucesivamente, hasta alcanzar a todos los nodos a los que se pueda llegar desde
+                     el nodo inicial.</p>
+
+                <p>- Una aplicación típica de este recorrido es la resolución de problemas de planificación.</p>
+
+                <p>- La búsqueda en amplitud se puede utilizar para hallar la distancia más corta entre algún
+                     nodo inicial y los nodos restantes del grafo. Esta distancia más corta es el mínimo número
+                     de arista que hay que recorrer para pasar desde el nodo inicial hasta el nodo concreto que
+                     se esté examinando.</p>
+
+                <h4>Recorrido (o búsqueda) en profundidad (depth-first search):</h4>
+                
+                <p>- La idea es alejarse lo más posible del nodo inicial (sin repetir nodos), luego devolverse un 
+                    paso e intentar lo mismo por otro camino.</p>
+
+                <p>- Este método es una forma básica de recorrer un grafo implementado recursividad.</p>
+
+                <p>- En este recorrido se basan los recorridos preorden y postorden para árboles binarios.</p>
+
+                <p>- Supóngase que una persona se encuentra en algún sistema de cuevas interconectadas, o en un 
+                    laberinto, en una cierta intersección (o nodo), y que se le pide a esta persona que busque
+                     la salida, que se encuentra en un determinado nodo. En esta búsqueda se podría emplear 
+                     varias opciones.</p>
+
+                <p>- Una posibilidad que probablemente no se utilizase sería la búsqueda en amplitud.</p>
+
+                <p>- Intuitivamente, una estrategia que comienza en algún nodo de la cueva y que despues visita.</p>
+
+                <p>- Todos y cada uno de los nodos adyacentes siguientes de la cueva, no parece demasiado.</p>
+
+                <p>- Prometedora.</p>
+
+                <h2>El Problema del Camino Minimo</h2>
+
+                <p>- En la teoría de grafos, el problema del camino más corto es el problema que consiste en encontrar
+                     un camino entre dos vértices o nodos, de tal manera que la suma de los pesos de las aristas que
+                      lo constituyen sea mínima. Al camino más corto entre dos vértices también se le conoce como 
+                      geodésia.</p>
+
+                <p>- Este problema no necesariamente tiene una única solución. Además, tiene diversas aplicaciones. Un 
+                    ejemplo es encontrar el camino más rápido para ir de una ciudad a otra en un mapa. En este caso,
+                     los vértices representarían las ciudades y las aristas las carreteras que unen, cuya ponderación
+                      viene dada por el tiempo que se emplea en atravesarlas.</p>
+
+                <p>- El problema de los puentes de Königsberg, también llamado más específicamente problema de los siete
+                     puentes de Königsberg, es un célebre problema matemático resuelto por Leonhard Euler en 1736 y cuya
+                     resolución dio origen a la teoría de grafos.</p>
+
+                <p>- Dado el mapa de Königsberg, con el río Pregel dividiendo el plano en cuatro regiones distintas, que
+                     están unidas a través de los siete puentes, ¿es posible dar un paseo comenzando desde cualquiera de
+                     estas regiones, pasando por todos los puentes, recorriendo solo una vez cada uno, y regresando al 
+                     mismo punto de partida?</p>
+
+                <h2>Grafos Acíclicos</h2>
+
+                <p>- Un grafo acíclico dirigido o DAG es un grafo dirigido que no tiene ciclos; esto significa que para 
+                    cada vértice v, no hay un camino directo que empiece y termine en v. Los DAG aparecen en modelos 
+                    donde no tiene sentido que un vértice tenga un camino directo a él mismo.</p>
+
+                <p>- Una fuente es un vértice sin relaciones de entrada, mientras que un sifón o sumidero es un vértice
+                     sin relaciones de salida.</p>
+
+                <p>- Un DAG finito tiene por lo menos una fuente y un sifón.</p>
+
+                <p>- La profundidad de un vértice, en un DAG finito, es la longitud del camino más larga del camino que
+                     exista desde el vértice a un sifón.</p>
+
+                <p>- La longitud de un DAG finito es el número de arcos del camino directo más largo. Dicho número es 
+                    igual a la máxima altura de todas las fuentes e igual a la máxima profundidad de todos los sifones.</p>
+
+                <h2>Aplicación de grafos</h2>
+
+                <p>- La teoría de un grafo es usada en diferentes áreas.</p>
+
+                <p>- Gracias a la teoría de grafos se pueden resolver diversos problemas.</p>
+
+                <p>- Los grafos se utilizan tambiém para modelar trayectos.</p>
+
+                <p>- Para la administración de proyectos.</p>
+
+                <p>- Una importante aplicacion de la teoría de grafos es en el campo de la informática.</p>
+
+                
+
+            </article>
+
+            <div class="container-aside">
+                <aside>
+                    <img src="IMG/Articulo1.png" alt="">
+                    <h2>Estructura de Datos Abstractos</h2>
+                    <p>En informática, un tipo de datos abstractos (ADT) o tipo de datos abstractos (ADT) es un modelo 
+                        matemático que consiste en una colección de operaciones definidas en un conjunto de datos en el 
+                        modelo.</p>
+                    <a href="articulo1.html"><button>Leer más</button></a>
+                </aside>
+                <aside>
+                    <img src="IMG/Articulo2.png" alt="">
+                    <h2>Estructura de Datos Lineales</h2>
+                    <p>Son aquellos elementos que ocupan posiciones consecutivas en la estructura, teniendo cada elemento
+                         un sucesor y un antecesor.</p>
+                    <a href="articulo2.html"><button>Leer más</button></a>
+                </aside>
+                <aside>
+                    <img src="IMG/Articulo3.png" alt="">
+                    <h2>Estructura de Datos Jerárquicas</h2>
+                    <p>Es un modelo de datos en el que los datos se organizan en una estructura similar a un árbol.</p>
+                    <a href="Articulo3.html"><button>Leer más</button></a>
+                </aside>
+            </div>
+        </div>
+
+        <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="IMG/logo_transparent.png" alt="">
+            </div>
+            <div class="redes-footer">
+                <a href="https://www.facebook.com/CorporacionUniversitariaRepublicana/"><i class="fa-brands fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g icon-redes-footer"></i></a>
+                <a href="https://www.instagram.com/urepublicana/"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>@urepublicana - Todos Los Derechos Reservados <br>
+                ⩺ Kevin Stiven Cerquera Espinosa - ks.cerquera@urepublicana.edu.co <br>
+                ⩺ Brandon Santiago Acosta Angarita - bs.acosta@urepublicana.edu.co</h4>
+        </footer>
+        </div>  
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>

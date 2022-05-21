@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Estructura de Datos</title>
+    <script src="https://kit.fontawesome.com/ec9e338e1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/principal.css">
+    <link rel="stylesheet" href="CSS/articulo.css">
+    <meta name="viewport" content="width=device=width, user-scalable=no, initial-scale=1.0, maximum-sclae=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <!--Header - Menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Data<b>Structures</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="menu-selected"><a href="temas.html" class="text-menu-selected"><i class="fas fa-file-alt"></i>Temas</a></li>
+                        <li><a href="#"><i class="fas fa-headset"></i>Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!--Portada-->
+    <div class="container-all" id="move-content">
+        <div class="article-container-cover">
+            <div class="container-info-cover">
+                <h1>Implementación de mapas, árboles y grafos</h1>
+                <p>alorado en una clase de java, representado mediante una matriz de adyacencia.</p>
+            </div>
+            </div>
+    
+            <div class="container-content">
+            <article>
+                <h1>Arboles</h1>
+
+                <h4>Que son los arboles</h4>
+
+                <p>↬ Es un tipo e abstracción de datos (TAD). <br>
+                    ↬ Imita la estructura jerárquica de un árbol. <br>
+                    ↬ Valor en la raíz y subárboles. <br>
+                    ↬ Nodo padre y nodos hijos. <br>
+                    ↬ Posee nodos, vértices y aristas de forma acíclica.</p>
+
+                <img src="IMG/Imagen19.png" alt="">
+
+                <h4>Implementación de árboles:</h4>
+
+                <p>▻ La clase de árbol se parametriza con un tipo de datos abstracto, ampliamos la clase de colección e implementamos
+                     la interfaz IF. <br>
+                     ▻ Lo único que podemos almacenar es la raíz. La raíz es un atributo llamado root de tipo E. <br>
+                     ▻ El constucor Tree crea una colección basia llamada super y luego nos muestra la raíz no tiene contenido. <br>
+                     ▻ Se devuelve el elemento situado en la raíz del árbol que es root, que devuelve el valor de this.root. <br>
+                     ▻ Ahora que sabemos si el árbol es una hoja se puede hacer lo mismo independientemente en todos los árboles 
+                     independientemente de su estructura comprobamos si la raíz está presente y el número de hijos es 0.</p>
+
+                <img src="IMG/Imagen20.png" alt="">
+
+                <h2>Arboles Binarios</h2>
+
+                <p>⩺ Es una estructura de datos en la cual cada nodo posee un hijo izquierdo o derecho. <br>
+                    ⩺ No puede tener mas de dos hijos. <br>
+                    ⩺ Si un hijo tiene como referencia null (no tiene dato), se conoce como un nodo externo, en caso contrario el hijo
+                     es llamado interno.</p>
+
+                <img src="IMG/Imagen21.png" alt="">
+
+                <h2>Implementación De Árboles Binarios</h2>
+
+                <p>La implementación en el árbol binario numérico es comparar números entre mayúsculas y minúsculas, cuando el número es
+                     menor que el nodo raíz, tomará el camino de la derecha y se posicionará allí, y viceversa, si el número es mayor, 
+                     lo hará. elegir el camino correcto. Como en la imagen, cuando ingresa el número 15 y lo compara con el nodo raíz, que
+                      es 34 menos que 34, irá a la izquierda y tomará su lugar, ahora podemos ver el número 20 ingresando a través del 
+                      nodo raíz. más pequeño, va a la izquierda, encuentra 15 y más grande que él, sigue el camino a la derecha y toma su 
+                      lugar.</p>
+
+                <h1>Grafos</h1>
+
+                <p>⪫ Es un conjunto de vértices o nodos unidos a aristas o arcos. <br>
+                    ⪫ Permite representar relaciones binarias entre elementos de un conjunto. <br>
+                    ⪫ Estudia las interrelaciones entre unidades que interactúan unas con otras.</p>
+
+                <h3>Implementación De Grafos</h3>
+
+                <p>La implementación del histograma de puntuación en la clase java representada por la matriz de adyacencia sería la 
+                    siguiente:</p>
+
+                <img src="IMG/Imagen22.png" alt="">
+
+                <h4>La clase grafo está compuesta de cuatro miembros:</h4>
+
+                <p>⫸ Adyacente: representa una matriz de adyacencia donde cada celda adyacente [i][j] representará el valor del arco 
+                    desde el nodo i hasta el nodo j. Si el valor es 0, suponemos que no hay arco. <br>
+                    ⫸ Información: Representa la información accesible a cada nodo. <br>
+                    ⫸ Nodos: que indica el número de nodos. <br>
+                    ⫸ Vacío: con valor true si el grafo está vacío.</p>
+
+                <p>El constructor creará un grafo con un número de nodos igual a numeroNodos. Inicializará la matriz de adyacencia a cero.</p>
+                
+            </article>
+
+            <div class="container-aside">
+                <aside>
+                    <img src="IMG/Articulo1.png" alt="">
+                    <h2>Estructura de Datos Abstractos</h2>
+                    <p>En informática, un tipo de datos abstractos (ADT) o tipo de datos abstractos (ADT) es un modelo 
+                        matemático que consiste en una colección de operaciones definidas en un conjunto de datos en el 
+                        modelo.</p>
+                    <a href="articulo1.html"><button>Leer más</button></a>
+                </aside>
+                <aside>
+                    <img src="IMG/Articulo2.png" alt="">
+                    <h2>Estructura de Datos Lineales</h2>
+                    <p>Son aquellos elementos que ocupan posiciones consecutivas en la estructura, teniendo cada elemento
+                         un sucesor y un antecesor.</p>
+                    <a href="articulo2.html"><button>Leer más</button></a>
+                </aside>
+                <aside>
+                    <img src="IMG/Articulo3.png" alt="">
+                    <h2>Estructura de Datos Jerárquicas</h2>
+                    <p>Es un modelo de datos en el que los datos se organizan en una estructura similar a un árbol.</p>
+                    <a href="Articulo3.html"><button>Leer más</button></a>
+                </aside>
+            </div>
+        </div>
+
+        <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="IMG/logo_transparent.png" alt="">
+            </div>
+            <div class="redes-footer">
+                <a href="https://www.facebook.com/CorporacionUniversitariaRepublicana/"><i class="fa-brands fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g icon-redes-footer"></i></a>
+                <a href="https://www.instagram.com/urepublicana/"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>@urepublicana - Todos Los Derechos Reservados <br>
+                ⩺ Kevin Stiven Cerquera Espinosa - ks.cerquera@urepublicana.edu.co <br>
+                ⩺ Brandon Santiago Acosta Angarita - bs.acosta@urepublicana.edu.co</h4>
+        </footer>
+        </div>  
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Estructura de Datos</title>
+    <script src="https://kit.fontawesome.com/ec9e338e1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/principal.css">
+    <link rel="stylesheet" href="CSS/articulo.css">
+    <meta name="viewport" content="width=device=width, user-scalable=no, initial-scale=1.0, maximum-sclae=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <!--Header - Menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Data<b>Structures</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="menu-selected"><a href="temas.html" class="text-menu-selected"><i class="fas fa-file-alt"></i>Temas</a></li>
+                        <li><a href="#"><i class="fas fa-headset"></i>Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!--Portada-->
+    <div class="container-all" id="move-content">
+        <div class="article-container-cover">
+            <div class="container-info-cover">
+                <h1>Implementación de Listas, Pilas y Colas</h1>
+                <p>Usando una lista enlazada, puede representar datos de manera eficiente en situaciones donde se necesita
+                     indicar el orden de procesamiento y no se puede prever el número de elementos a procesar, ya que este
+                      tipo de representación permite la creación y destrucción.</p>
+            </div>
+            </div>
+    
+            <div class="container-content">
+            <article>
+                <h2>Vectores</h2>
+
+                <p>Es un conjunto finito y ordenado de datos homogeneos.</p>
+
+                <img src="IMG/Imagen15.png" alt="">
+
+                <p>Puede ser de una dimensión hasta n dimensiones.</p>
+
+                <h2>Listas</h2>
+
+                <p>Son estructuras ordenadas de elementos que requieren cierta cantidad de memoria segun se vaya usando.</p>
+                
+                <img src="IMG/Imagen4.gif" alt="">
+
+                <p>Ademas al final cada lista cuenta con un valor NULL para señalar el final de la lista.</p>
+
+                <p>Cada elemento tiene internamente una direccion de memoria donde esta el siguiente elemento.</p>
+
+                <h2>Listas Enlazadas Simples:</h2>
+
+                <p>Se necesita que cada elemento tenga un enlaze con el siguiente.</p>
+
+                <img src="IMG/Imagen16.png" alt="">
+
+                <p>Partiendo desde el primero hasta el ultimo en su debido orden.</p>
+
+                <p>Sin poder regresar .</p>
+
+                <h2>Listas Enlazadas Con Cursores</h2>
+
+                <p>Las diversas listas enlazadas se componen de Implementación de puntero, esta consiste en una 
+                    secuencia de nodos, en los que se guardan campos de datos arbitrarios y una o dos referencias 
+                    al nodo anterior o posterior.</p>
+
+                <img src="IMG/Imagen18.png" alt="">
+                
+                <h2>Colas</h2>
+
+                <p>Son listas en donde el modo de acceso son "FIFO" el primero en entrar es el primero en salir.</p>
+
+                <img src="IMG/Imagen6.png" alt="">
+
+                <p>Se pueden borrar elementos en el frente o insertarlos por la cola.</p>
+
+                <p>Se utiliza en sistemas informaticos,transportes y operaciones</p>
+
+                <h2>Colas Mediante Arrays</h2>
+
+                <p>La clase ArrayCola implementa el interfaz Cola.</p>
+
+                <img src="IMG/Imagen17.png" alt="">
+
+                <p>- Un array para almacenar los elementos de la cola (Object). <br>
+                    - Una capacidad inicial para el vector. <br>
+                    - Un marcador al primer elemento de la Cola. <br>
+                    - Un marcador al último elemento de la Cola (fin).</p>
+
+                <h2>Pilas</h2>
+
+                <p>Es considerada una lista donde el acceso es de tipo "LIFO" se suele aplicar por su simplicidad.</p>
+
+                <img src="IMG/Imagen5.gif" alt="">
+
+                <p>Es como apilar objetos y por ende los elementos de la mitad nunca serán usados sin antes despejar
+                     los que están por encima</p>
+
+                <p>Es considerada una lista donde el acceso es de tipo "LIFO" se suele aplicar por su simplicidad.</p>
+
+                <h2>Pilas Mediante Arrays</h2>
+
+                <p>La clase ArrayPila implementa la interfaz Pila.</p>
+                
+                <img src="IMG/arraypila.webp" alt="">
+
+                <p>- Un array para almacenar los elementos de la pila. <br>
+                    - Una capacidad inicial para el vector. <br>
+                    - Un marcador al tope de la pila (la posición en el vector del último elemento insertado), inicialmente
+                    valdrá -1.</p>
+
+                <h2>La Implementación De Cursores</h2>
+
+                <p>- La gestión de celdas puede llegar a ser más eficiente. <br>
+                    - Los objetos pequeños dan alocación con new y delete este fragmenta memoria. <br>
+                    ( usando cursores, las celdas no se mezclan con el resto de los objetos del programa).</p>
+
+            </article>
+
+            <div class="container-aside">
+                <aside>
+                    <img src="IMG/Articulo1.png" alt="">
+                    <h2>Estructura de Datos Abstractos</h2>
+                    <p>En informática, un tipo de datos abstractos (ADT) o tipo de datos abstractos (ADT) es un modelo 
+                        matemático que consiste en una colección de operaciones definidas en un conjunto de datos en el 
+                        modelo.</p>
+                    <a href="articulo1.html"><button>Leer más</button></a>
+                </aside>
+                <aside>
+                    <img src="IMG/Articulo2.png" alt="">
+                    <h2>Estructura de Datos Lineales</h2>
+                    <p>Son aquellos elementos que ocupan posiciones consecutivas en la estructura, teniendo cada elemento
+                         un sucesor y un antecesor.</p>
+                    <a href="articulo2.html"><button>Leer más</button></a>
+                </aside>
+                <aside>
+                    <img src="IMG/Articulo3.png" alt="">
+                    <h2>Estructura de Datos Jerárquicas</h2>
+                    <p>Es un modelo de datos en el que los datos se organizan en una estructura similar a un árbol.</p>
+                    <a href="Articulo3.html"><button>Leer más</button></a>
+                </aside>
+            </div>
+        </div>
+
+        <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="IMG/logo_transparent.png" alt="">
+            </div>
+            <div class="redes-footer">
+                <a href="https://www.facebook.com/CorporacionUniversitariaRepublicana/"><i class="fa-brands fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g icon-redes-footer"></i></a>
+                <a href="https://www.instagram.com/urepublicana/"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>@urepublicana - Todos Los Derechos Reservados <br>
+                ⩺ Kevin Stiven Cerquera Espinosa - ks.cerquera@urepublicana.edu.co <br>
+                ⩺ Brandon Santiago Acosta Angarita - bs.acosta@urepublicana.edu.co</h4>
+        </footer>
+        </div>  
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>

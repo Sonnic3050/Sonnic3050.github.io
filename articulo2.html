@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Estructura de Datos</title>
+    <script src="https://kit.fontawesome.com/ec9e338e1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/principal.css">
+    <link rel="stylesheet" href="CSS/articulo.css">
+    <meta name="viewport" content="width=device=width, user-scalable=no, initial-scale=1.0, maximum-sclae=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <!--Header - Menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Data<b>Structures</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="menu-selected"><a href="temas.html" class="text-menu-selected"><i class="fas fa-file-alt"></i>Temas</a></li>
+                        <li><a href="#"><i class="fas fa-headset"></i>Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!--Portada-->
+    <div class="container-all" id="move-content">
+        <div class="article-container-cover">
+            <div class="container-info-cover">
+                <h1>Estructura de Datos Lineales</h1>
+                <p>Son aquellos elementos que ocupan posiciones consecutivas en la estructura, teniendo cada elemento
+                     un sucesor y un antecesor.</p>
+            </div>
+            </div>
+    
+            <div class="container-content">
+            <article>
+                <h1>¿Que es?</h1>
+    
+                <h3>Se caracterizan por sus elementos, los cuales son:</h3>
+    
+                <p>- Están ubicados uno al lado del otro relacionados en forma lineal. <br>
+                    - Pueden estar conformados por uno o varios subelementos o campos que pueden pertenecer a cualquier
+                     tipo de dato. <br>
+                    - Ocupan lugares sucesivos en la estructura y cada uno de ellos tiene un único sucesor y un único
+                    predecesor, entendiendo esta como una secuencia.</p>
+                <!--Imagen de TDA y TAD-->
+                <img src="" alt="">
+
+                <p>Modelo que define valores y las operaciones que se pueden realizar sobre ellos. Se denomina abstracto,
+                     ya que, la intención es que quien lo utiliza, no necesite conocer los detalles de la representación
+                      interna o bien el como están implementadas las operaciones.</p>
+    
+                <h2>Estructuras Lineales Principales</h2>
+    
+                <h3>Existen tres estructuras lineales principales las cuales son:</h3>
+
+                <p>- Las Pilas. <br>
+                    - Las Colas. <br>
+                    - Las Listas.</p>
+
+                <h3>Sus operaciones basicas para dichas estructuras son:</h3>
+
+                <p>- Crear <br>
+                    - Añadir <br>
+                    - Borrar <br>
+                    - Consultar <br>
+                    - Comprobar</p>
+
+                <h2>Pilas / Stack</h2>
+
+                <p>Es una estructura en la que ñps datos son agregados y eliminados únicamente por un extremo 
+                    de la estructura.</p>
+
+                <img src="IMG/Imagen5.gif" alt="">
+
+                <h3>Tipos de Pilas</h3>
+
+                <p>- Pila vacia. <br>
+                    - Pila con elementos. <br>
+                    - Pilla llena.</p>
+
+                <h2>Colas / Queue</h2>
+
+                <p>Es una estructura de datos lienal en la que los datos son agregados por un extremo y eliminados
+                     por el extremo opuesto.</p>
+
+                <img src="IMG/Imagen6.png" alt="">
+
+                <h3>Tipos de Colas</h3>
+
+                <h4>Bicolas de Entrada Restringida:</h4>
+
+                <p>Son aquellas donde la inserción sólo se hace por la final, aunque podemos eliminar al inicio 
+                    o al final.</p>
+
+                <h4>Bicolas de salida restringida:</h4>
+
+                <p>Son aquellas donde sólo se elimina por el final, aunque se puede insertar al inicio y al final.</p>
+
+                <h3>Colas de Prioridad</h3>
+                <p>Una cola de prioridad es una estructura de datos en la que los elementos se atienden en el 
+                    orden indicado por una prioridad asociada a cada uno. Si varios elementos tienen la misma 
+                    prioridad, se atenderán de modo convencional según la posición que ocupen. <br>
+                    Este tipo especial de colas tienen las mismas operaciones que las colas, pero con la condición 
+                    de que los elementos se atienden en orden de prioridad. <br>
+                    Se entiende la prioridad como un valor numérico y asignando a altas prioridades de valores 
+                    pequeños, las colas de prioridad nos permiten añadir elementos en cualquier orden y recuperarlos
+                    de menor a mayor.</p>
+
+                <h4>Hay dos Tipos de Colas de Prioridad</h4>
+
+                <p>- Las colas de prioridad con orden descendiente. <br>
+                    - Las colas de prioridad con orden ascendente</p>
+
+                <h3>Listas / List</h3>
+
+                <p>Es una secuencia de nodos autorreferenciados con una o dos referencias al nodo anterior y/o siguiente.</p>
+
+                <p>Un nodo es una estructura que agrupa un conjunto de datos o campos arbitrarios, donde por lo menos
+                     un campo es de referencia o enlace a un nodo del mismo tipo (autorrefenciado).</p>
+                
+                <img src="IMG/Imagen4.gif" alt="">
+
+                <h2>Aplicación</h2>
+
+                <p>Cuando una aplicación inicia el método principal es invocado y se reserva memoria en la pila. En el
+                    segmento de memoria de la pila donde se alojan las variables requeridas por las funciones dentro 
+                    del programa. Asi mismo, cada vez que se llama una función del programa. Una sección de la pila 
+                    llamada marco o frame, se reserva y es hay donde las variables de la nueva función son almacenadas.</p>         
+    
+                <h3>Colecciones o Bolsas</h3>
+
+                <p>Las colecciones son nodos o registros que mantienen relación entre sí.</p>
+                
+                <img src="IMG/Imagen10.png" alt="">
+
+                <h3>Conjuntos</h3>
+
+                <p>Es una colección de valores, sin orden, ni valores repetidos. Puede verse, como una cadena asociativa
+                     donde no se siente al valor de cada par clave-valor.</p>
+
+                <h3>Lista</h3>
+
+                <p>Es una estructura lineal compuesta por una secuencia de 0 o más elementos de algún tipo determinado 
+                    y ordenados en filas o columnas y podrán insertarse o eliminarse elementos en cualquier posición 
+                    sin alterar su orden lógico.</p>
+
+                <h3>Vectores</h3>
+
+                <p>Los vectores son estructuras de datos similares a los arreglos, pero más desarrollados, ya que entre
+                     otras cosas, crecen y decrecen dinámicamente, según se necesite.</p>
+
+
+
+                <h2></h2>
+                
+            </article>
+
+            <div class="container-aside">
+                <aside>
+                    <img src="IMG/Articulo1.png" alt="">
+                    <h2>Estructura de Datos Abstractos</h2>
+                    <p>En informática, un tipo de datos abstractos (ADT) o tipo de datos abstractos (ADT) es un modelo 
+                        matemático que consiste en una colección de operaciones definidas en un conjunto de datos en el 
+                        modelo.</p>
+                    <a href="articulo1.html"><button>Leer más</button></a>
+                </aside>
+                <aside>
+                    <img src="IMG/ar" alt="">
+                    <h2>Titulo </h2>
+                    <p>Pequeño Texto</p>
+                    <a href="#"><button>Leer más</button></a>
+                </aside>
+                <aside>
+                    <img src="IMG/Imagen1.png" alt="">
+                    <h2>Titulo </h2>
+                    <p>Pequeño Texto</p>
+                    <a href="#"><button>Leer más</button></a>
+                </aside>
+            </div>
+        </div>
+
+        <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="IMG/logo_transparent.png" alt="">
+            </div>
+            <div class="redes-footer">
+                <a href="https://www.facebook.com/CorporacionUniversitariaRepublicana/"><i class="fa-brands fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g icon-redes-footer"></i></a>
+                <a href="https://www.instagram.com/urepublicana/"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>@urepublicana - Todos Los Derechos Reservados <br>
+                ⩺ Kevin Stiven Cerquera Espinosa - ks.cerquera@urepublicana.edu.co <br>
+                ⩺ Brandon Santiago Acosta Angarita - bs.acosta@urepublicana.edu.co</h4>
+        </footer>
+        </div>  
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Estructura de Datos Abstractos</title>
+    <script src="https://kit.fontawesome.com/ec9e338e1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/principal.css">
+    <link rel="stylesheet" href="CSS/articulo.css">
+    <meta name="viewport" content="width=device=width, user-scalable=no, initial-scale=1.0, maximum-sclae=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <!--Header - Menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Data<b>Structures</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="menu-selected"><a href="temas.html" class="text-menu-selected"><i class="fas fa-file-alt"></i>Temas</a></li>
+                        <li><a href="#"><i class="fas fa-headset"></i>Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!--Portada-->
+    <div class="container-all" id="move-content">
+        <div class="article-container-cover">
+        <div class="container-info-cover">
+            <h1>Estructura De Datos Abstractos</h1>
+            <p>En informática, un tipo de datos abstractos (ADT) o tipo de datos abstractos (ADT) es un modelo 
+                matemático que consiste en una colección de operaciones definidas en un conjunto de datos en el 
+                modelo.</p>
+        </div>
+        </div>
+
+        <div class="container-content">
+        <article>
+            <h1>En La Estructura De Datos Abstractos</h1>
+
+            <p>Una estructura o tipo de datos abstracto (ADT) es una clase o módulo de programa que contiene:</p>
+
+            <p>- Datos privados; con una determinada estructura los programas que usan la clase son independientes
+                de la forma en la que éste se implementa.</p>
+
+            <p>- En el nivel mas alto de abstracción estarían los tipos de datos abstractos (TDA)(TAD), éstos se 
+                pueden ver como modelos matemáticos sobre los que se definen una serie de operaciones. En realidad
+                son una formalización del concepto de dato que el programador considera adecuado para resolver el
+                problema.</p>
+
+            <p>- Cumple con los principios de abstracción, ocultación de la información y se puede manejar sin
+                conocer la representación interna.</p>
+            
+            <img src="IMG/Imagen1.png" alt="">
+
+            <h1>Estructura de Datos</h1>
+
+            <p>Una estructura de datos es la implementación física de un tipo abstracto de datos. Se reserva esta
+                definición a la representación física de los datos. Son una forma de organizar los datos en la 
+                computadora, de tal manera que nos permita realizar unas operaciones con ellas de forma eficiente.
+                Es decir, igual que una array introducimos un dato y eso prácticamente de inmediato, (no siempre lo
+                 es), según qué estructuras de datos y que operaciones.</p>
+
+            <img src="IMG/Imagen3.png" alt="">
+            
+            <h1>Algunos Tipos De Datos Abstractos Son:</h1>
+                <br>
+            <h3>TDA Lista:</h3>
+            <p> Dado un conjunto D, una lista de elementos de dicho dominio es una secuencia finita y ordenada de 
+                elementos del mismo. La lista es un contenedor de objetos que pueden que pueden ser insertados,
+                eliminados y accedidos de manera flexible y no estricta como las pilas y colas.</p>
+
+            <img src="IMG/Imagen4.gif" alt="">
+            <br>
+            <h3>TDA Pila:</h3>
+            <p> Una pila es una lista de elementos de la cual sólo se puede extraer el ultimo elemento insertado.
+                La posición en donde se encuentra dicho elemento se denomina tope de la pila.</p>
+
+            <img src="IMG/Imagen5.gif" alt="">
+            <br>
+            <h3>TDA Cola:</h3>
+            <p>Es un tipo de datos abstractos que almacena un conjunto de datos que poseen una llave pertenecinete
+                a algún conjunto ordenado, y permite insertar nuevos elementos y extraer el máximo (o el minimo,
+                en caso de que la estructura se organice con un criterio de orden inverso).</p>
+
+            <img src="IMG/Imagen6.png" alt="">
+            <br>
+            <h3>Array</h3>
+            <p>Es un tipo de datos abstracto que almacena un conjunto ordenado, y permite insertar nuevos elementos
+                y extraer el máximo (oel mínimo, en caso de que la estructura se organice con un criterio de orden
+                inverso).</p>
+
+            <img src="IMG/Imagen7.png" alt="">
+            <br>
+            <h3>Montículos Binarios</h3>
+            <p>Un montículo de mínimos es un árbol binario semicompleto donde el componente en la raíz es menor que
+                todos los recursos en el hijo izquierdo y en el derecho, y los dos hijos son a su vez montículos de 
+                mínimos. Equivalentemente, el factor en cada nodo es menor que los recursos en las raíces de sus 
+                descendientes; de esta forma, la raíz del árbol tiene el mínimo de todos los elementos en el árbol.</p>
+
+            <img src="IMG/Imagen8.png" alt="">
+            <br>
+            <h1>Diferencia entre estructura de datos y tipos de datos abstractos</h1>
+            <h3>Estructura de datos</h3>
+                <p>Es la estructura de programación que se selecciona para representar las características de la entidad
+                modelada. </p>
+            <h3>Tipos de datos abstractos</h3>
+                <p>Son funciones que permiten hacer uso de la estructura de datos, y que esconden los detalles de dicha 
+                estructura, permitiendo un mayor nivel de abstracción.</p>
+
+            <h1>Que es la abstracción</h1>
+            <p>Una abstracción es la simplificación de un objeto o de un proceso dela realidad en la que sólo se 
+                consideran los aspectos más relevantes.</p>
+                
+            <h3>Tipo de Abstracción</h3>
+            <p>01 <br>
+                La abstracción funcional <br>
+                La abstracción funcional surge de la simple idea de crear procedimientos en diferentes partes del
+                programa mediante un nombre.</p>
+            <p>02 <br>
+                Las abstracciones de datos(=clase) <br>
+                La primera aplicación a los datos está en los propios tipos de datos básicos de los lenguajes de 
+                programación.</p>
+
+            <h1>Metodología de la programación de un TDA</h1>
+            <p>Para la programación de un TDA deberan realizarse tres pasos fundamentales</p>
+            <h3>Análisis de datos y operaciones</h3>
+            <h3>Especificación del tipo de datos abstracto </h3>
+                <p>El lenguaje idóneo para poder definir adecuadamente las especificaciones de un TDA es el matemático.</p>
+            <h3>Implementación </h3>
+                <p>Para la implementación del TDA es fundamental disponer de mecanísmo que permitan ENCAPSULAR, el tipo de
+                dato y sus operaciones, y OCULTAR la información al programador usuario.</p>
+
+            <h1>Eficiencia de estructura de datos</h1>
+            <p>Las estructuras de datos tienen como objetivo facilitar la organización, con el propósito de que
+                la manipulación de ello sea eficiente. Por eficiencia se entiende la habilidad de encontrar y 
+                manipular los datos con el mínimo de recursos tales como tiempo de proceso y espacío en memoria.</p>
+
+            <h1>Tiempo de ejecución</h1>
+            <h3>El Tamaño De Entrada </h3>
+                <P>El tiempo que tarde un algoritmo en ejecutarse normalmente dependerá de la cantidad de datos que reciba a
+                la entrada.</p>
+            <h3>El Tiempo De Ejecución </h3>
+                <p>Inclusive en la misma máquina, el mismo algoritmo tarda en ocasiones muchísimo más tiempo en ofrecer el 
+                resultado que otras, gracias a componentes como la época que consume las demás aplicaciones que se 
+                permanecen ejecutando, o si hay suficiente memoria RAM en el instante de llevar acabo.</p>
+
+            <h1>Interfaz y Herencia Múltiple</h1>
+            <p>La herencia de múltiples interfaces permite que un onjeto herede muchas firmas de métodos diferentes con
+                 la advertencia de que el objeto heredado debe implementar esos métodos heredados.</p>
+
+            <h1>Herencia Múltiple</h1>
+            <p>La herencia múltiple sin restricciones presenta: <br>
+                - Anomalías. <br>
+                - Atributos del mismo nombre. <br> 
+                - Métodos iguales con distinra implementación.</p>
+
+            <img src="IMG/Imagen9.png" alt="">
+
+            <p>El esquema de la figura representaría que hubiera clases como ProfesorEmerito que heredaría de dos clases:
+                 Profesor y Conferenciante</p>
+
+            <h1>Interfaz</h1>
+            <p>El concepto de interfaz en alusión a la asignatura de métodos o la información pública de las clases. <br>
+                Vamos a profundizar en el término de interface en Java. <br>
+                a). En el encabezado se utiliza el término de interface en vez de class o abstract class. <br>
+                b). Las interfaces no poseen ningún constructor. <br>
+                c). Un interfaz solo admite campos de tipo "public static final", eso quiere decir, campos de clase, 
+                públicos y constantes.</p>
+
+            <h1>Estructura De Datos Genéricas</h1>
+            <p>Una clase genérica encapsula operaciones que no son específicas de un tipo de datos en particular. 
+                El uso más común de las clases genéricas es con colecciones como listas enlazadas, tablas hash, 
+                pilas, colas y árboles. Las operaciones como agregar y eliminar elementos de una colección se 
+                realizan básicamente de la misma manera, independientemente del tipo de datos almacenados.</p>
+            
+            <h1>Colecciones</h1>
+            <p>Es el tipo más genérico en cuanto a que se refiera a cualquier tipo que contenga un grupo de 
+                elementos. Viene definido por la interfaz Collection, de la cual heredará cada subtipo específico.
+                En esta interfaz encontramos una serie de métodos que nos servirán para acceder a los elementos de 
+                cualquier colección de datos, sea del tipo que sea.</p>
+
+            <h3>Metodos Generales</h3>
+            <p>- Boolean ADD (OBJECT) <br>
+                - Void CLEAR <br>
+                - Boolean CONTAINS (OBJECT) <br>
+                - Interator ITERATOR <br>
+                - Boolean REMOVE (OBJECT) <br>
+                - Int SIZE
+                - Object TOARRAY</p>
+            
+            <img src="IMG/Collection1.png" alt="">
+
+            <h1>Iteradores</h1>
+            <p>Es un puntero que es utilizado por un algoritmo para recorrer los elementos almacenados en un 
+                contenedor.</p>
+            
+            <img src="IMG/Collection2.png" alt="">
+
+            <h2>Características</h2>
+            <p>Existen diversas características principales que distinguen unos iteradores de otros. Podemos 
+                resumirlas como sigue:</p>
+
+            <h3>Tipos de Integradores</h3>
+            <p>- Iteradores reversibles y no-reversibles. <br>
+                - Iteradores constantes y mutables. <br>
+                - Iteradores de flujo.</p>
+
+            
+        </article>
+
+            <div class="container-aside">
+                <aside>
+                    <img src="IMG/Articulo0.jpg" alt="">
+                    <h2>Estructura de Datos</h2>
+                    <p>Las estructuras de datos se basan generalmente en la capacidad de un ordenador para recuperar y 
+                        almacenar datos en cualquier lugar de su memoria.</p>
+                    <a href="articulo0.html"><button>Leer más</button></a>
+                </aside>
+                <aside>
+                    <img src="IMG/Articulo2.png" alt="">
+                    <h2>Estructura de Datos Lineales</h2>
+                    <p>Son aquellos elementos que ocupan posiciones consecutivas en la estructura, teniendo cada elemento
+                         un sucesor y un antecesor.</p>
+                    <a href="articulo2.html"><button>Leer más</button></a>
+                </aside>
+                <aside>
+                    <img src="IMG/Articulo3.png" alt="">
+                    <h2>Estructura de Datos Jerárquicas</h2>
+                    <p>Es un modelo de datos en el que los datos se organizan en una estructura similar a un árbol.</p>
+                    <a href="Articulo3.html"><button>Leer más</button></a>
+                </aside>
+            </div>
+        </div>
+
+        <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="IMG/logo_transparent.png" alt="">
+            </div>
+            <div class="redes-footer">
+                <a href="https://www.facebook.com/CorporacionUniversitariaRepublicana/"><i class="fa-brands fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g icon-redes-footer"></i></a>
+                <a href="https://www.instagram.com/urepublicana/"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>@urepublicana - Todos Los Derechos Reservados <br>
+                ⩺ Kevin Stiven Cerquera Espinosa - ks.cerquera@urepublicana.edu.co <br>
+                ⩺ Brandon Santiago Acosta Angarita - bs.acosta@urepublicana.edu.co</h4>
+        </footer>
+        </div>  
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>

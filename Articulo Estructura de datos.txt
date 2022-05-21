@@ -1,0 +1,39 @@
+<div class="container-info-cover">
+            <h1>Estructura de Datos</h1>
+            <p>Las estructuras de datos se basan generalmente en la capacidad de un ordenador para recuperar y 
+                almacenar datos en cualquier lugar de su memoria.</p>
+        </div>
+        </div>
+
+        <div class="container-content">
+        <article>
+            <h1>En La Estructura De Datos</h1>
+
+            <p>Una estructura de datos es una forma especial de organizar los datos en una computadora para que puedan 
+                usarse de manera eficiente. Diferentes tipos de estructuras de datos son adecuados para diferentes 
+                tipos de aplicaciones y algunas están estructuradas para tareas especificas.</p>
+
+            <p>Las estructuras de datos son un método de procesamiento eficiente de grandes cantidades de datos, que 
+                se utilizan para fines tales como grandes bases de datos y servicios de indexación de Internet. En 
+                general, las estructuras de datos eficientes son la clave para diseñar algoritmos eficientes. Algunos 
+                métodos de diseño formal y lenguajes de programación enfatizan las estructuras de datos, en lugar de 
+                los algoritmos, como un factor organizativo clave en el diseño de software.</p>
+
+            <h1>Tipos de Estructura de Datos</h1>
+
+            <p></p>
+
+            <img src="IMG/Imagen2.jpg" alt="">
+            
+            <p>Las estructuras de datos pueden ser de diferentes tipos, dependiendo de la tecnología utilizada para 
+                el almacenamiento y la recuperación, estos tipos son los siguientes:</p>
+
+            <p>- Estructura de datos estática. <br>
+                - Estructura de datos dinámica.</p>
+
+            <p>Según el orden en que se recorren los elementos de la estructura de datos, se pueden dividir en las 
+                siguientes categorías:</p>
+
+            <p>- Estructura de datos lineal. <br>
+                - Estructura de datos no lineal.</p>
+        </article>
